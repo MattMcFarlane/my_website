@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Matthew Portfolio</title>
+  <meta name="keywords" content="Matthew, Mcfarlane, Matthew McFarlane, Web Developer, Resume, Portfolio">
+  <meta name="author" content="Matthew McFarlane">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Portfolio_Favi.png">
+
+  <!-- og tags -->
+  <!-- TODO: add site name when I have a domain -->
+  <!-- <meta property="og:site_name" content="Matthews Portfolio" />  -->
+  <meta property="og:description" content="Showcase of my skills" />
+  <meta property="og:title" content="Matthews Portfolio" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Image Slider -->
+  <link rel="stylesheet" href="./css/imageSlider.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="header">Matthew McFarlane's Portfolio</h1>
+    <div class="my-nav-bar">
+      <div class="my-nav-link"><a href="index.html">Home</a></div>
+      <div class="my-nav-link"><a href="resume.html">Resume</a></div>
+      <div class="my-nav-link"><a href="./products/single-products.html">Projects</a></div>
+      <div class="my-nav-link"><a target="_blank" href="https://www.linkedin.com/in/matthew-mcfarlane-b568a978">LinkedIn</a></div>
+    </div>
+  </header>
+
+  <hr />
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <h2>Skills:</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h2>About Me:</h2>
+          <p class="content-bio">
+            Hello, my name is Matthew McFarlane. I've been working at Amazon for almost 3 years. I'm currently on my way to becoming a Web Delevoper and I welcome you to my site. Here you will find projects of mine as well as my resume.
+          </p>
+          <p class="content-bio">
+            I've been enjoying learning about HTML and CSS and am excited to continue to learn more! I want to learn more about JavaScript and interacting with APIs. Also single page applications like React.
+          </p>
+        </div>
+        <div class="col-md">
+          <img class="profile-img" src="https://media.licdn.com/dms/image/C5603AQFTQ5pPh5GgVg/profile-displayphoto-shrink_200_200/0/1543610700126?e=1697068800&v=beta&t=j9UlLXp7rIZKKjHJqsYYtmPi702oi1jhuacnL_sClWw" alt="Profile Picture">
+        </div>
+      </div>
+<!-- image slider -->
+      <div class="row image-slider">
+        <div class="col-lg">
+          <div class="">
+            <h1>Projects</h1>
+            <div>Click an image to view project!</div>
+          </div>
+          
+          <div id="slider">
+            <a href="https://www.google.com" target="_blank"><img src="https://picsum.photos/id/256/500/400" alt="Project 1"></a>
+            <a href="https://www.linkedin.com/in/matthew-mcfarlane-b568a978/" target="_blank"><img src="https://picsum.photos/id/1011/500/400" alt="Project 2"></a>
+            <a href="https://www.reddit.com" target="_blank"><img src="https://picsum.photos/id/1067/500/400" alt="Project 3"></a> 
+            <a href="https://www.facebook.com" target="_blank"><img src="https://picsum.photos/id/1055/500/400" alt="Project 4"></a>
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="accordion" id="contact-accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Feel free to reach out to me by leaving your contact information below.
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#contact-accordion">
+          <div class="accordion-body">
+            <form action="">
+              <table>
+                <tr>
+                  <td><label for="name">Name: </label> </td>
+                  <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email: </label></td>
+                  <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                  <td><label for="message">Message:</label></td>
+                  <td><textarea id="message" name="message" cols="50" rows="4"></textarea></td>
+                </tr>
+              </table>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./javascript/imageSlider.js"></script>
+</html>
